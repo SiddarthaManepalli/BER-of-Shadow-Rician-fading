@@ -1,6 +1,6 @@
 function pe = IPAM_RICIAN(I)
 % ========================================================================================================================
-% BIT ERROR PROBABILITY OF I-PAM OVER DOUBLE SHADOWED RICIAN FADING CHANNEL SUBJECTED TO DOUBLE GATED NOISE
+% BIT ERROR PROBABILITY OF I-PAM OVER SHADOWED RICIAN FADING CHANNEL SUBJECTED TO DOUBLE GATED NOISE
 % The Bit Error Probability of I-PAM scheme is obtained by a formula where
 % Error Function erfc can be obtained by 2-(2*CDF(Additive Noise)) then by
 % Multiplying it with weights W(i,k,M) followed by summation with i and k
@@ -48,7 +48,7 @@ xlim([0 25])
 set(gcf,'color','white')
 xlabel('Signal to Noise Ratio (dB)','FontSize',16)
 ylabel('Bit Error Probability (Pe)','FontSize',16)
-title('BEP of I-PAM over Double Shadowed Rician Fading Channel subjected to Double Gated Noise','FontSize',16)
+title('BEP of I-PAM over Shadowed Rician Fading Channel subjected to Double Gated Noise','FontSize',16)
 legend({'SNI(dB)=10, md=2.3, k=2.4',...
         'SNI(dB)=15, md=2.3, k=2.4',...
         'SNI(dB)=20, md=2.3, k=2.4',...
@@ -67,7 +67,7 @@ function final = CDF(A)
 % The CDF of Additive noise is obtained by normalizing and finding
 % Cummulative summation of PDF of Additive Noise 
 % PDF of Additive Noise is obtained by integrating the product of 
-% The PDF's of Double Shadowed Rician fading model and G2AWGN noise model 
+% The PDF's of Shadowed Rician fading model and G2AWGN noise model 
 
 
 % Nakagami-m Shape Parameter
